@@ -95,8 +95,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Stones",
-                    "x": 0.4424603174603175,
-                    "y": 0.7737430167597765,
+                    "x": 0.3134920634920635,
+                    "y": 0.7597765363128491,
                     "uniqueID": 1748895810400,
                     "ioValues": [
                         {
@@ -529,8 +529,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.5105820105820106,
-                    "y": 0.76536312849162,
+                    "x": 0.371031746031746,
+                    "y": 0.5027932960893855,
                     "uniqueID": 1748895811329,
                     "ioValues": [
                         {
@@ -555,8 +555,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.621031746031746,
-                    "y": 0.6843575418994413,
+                    "x": 0.5178571428571428,
+                    "y": 0.5726256983240223,
                     "uniqueID": 1748895810413,
                     "ioValues": [
                         {
@@ -1349,7 +1349,7 @@
                                 },
                                 {
                                     "name": "z-axis degrees",
-                                    "ioValue": -90
+                                    "ioValue": 90
                                 }
                             ],
                             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
@@ -1357,8 +1357,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.4662698412698413,
-                            "y": 0.7597765363128491,
+                            "x": 0.46097883597883593,
+                            "y": 0.7318435754189945,
                             "uniqueID": 1748897988966,
                             "ioValues": [
                                 {
@@ -1367,11 +1367,11 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 131
+                                    "ioValue": -131
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 30
+                                    "ioValue": -30
                                 },
                                 {
                                     "name": "zDist",
@@ -1501,8 +1501,8 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.35648148148148145,
-                    "y": 0.4217877094972067,
+                    "x": 0.3082010582010582,
+                    "y": 0.3128491620111732,
                     "uniqueID": 1748897050169,
                     "ioValues": [
                         {
@@ -1624,6 +1624,177 @@
                     ],
                     "fileTypeVersion": 1,
                     "compiledBom": []
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Legs",
+                    "x": 0.42724867724867727,
+                    "y": 0.8463687150837989,
+                    "uniqueID": 1748898200792,
+                    "ioValues": [
+                        {
+                            "name": "Height",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Width",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1748898200425,
+                            "ioValues": [],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        },
+                        {
+                            "atomType": "Circle",
+                            "name": "Circle",
+                            "x": 0.18386243386243387,
+                            "y": 0.7150837988826816,
+                            "uniqueID": 1748898207518,
+                            "ioValues": [
+                                {
+                                    "name": "diameter",
+                                    "ioValue": 25
+                                }
+                            ],
+                            "description": "Creates a new circle."
+                        },
+                        {
+                            "atomType": "Extrude",
+                            "name": "Extrude",
+                            "x": 0.30092592592592593,
+                            "y": 0.611731843575419,
+                            "uniqueID": 1748898224227,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1748898207518
+                                },
+                                {
+                                    "name": "height",
+                                    "ioValue": 65
+                                }
+                            ],
+                            "description": "Extrudes a 2D shape. Input can be negitive. "
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.4107142857142857,
+                            "y": 0.36033519553072624,
+                            "uniqueID": 1748898234383,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1748898224227
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Height",
+                            "x": 0.04,
+                            "y": 0.6620111731843575,
+                            "uniqueID": 1748898241582,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                            "type": "number"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Width",
+                            "x": 0.04,
+                            "y": 0.8072625698324022,
+                            "uniqueID": 1748898248183,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                            "type": "number"
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "H/2",
+                            "x": 0.18121693121693122,
+                            "y": 0.33519553072625696,
+                            "uniqueID": 1748898261107,
+                            "ioValues": [
+                                {
+                                    "name": "H",
+                                    "ioValue": 1
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "H/2"
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "H/-2",
+                            "x": 0.2632275132275132,
+                            "y": 0.3910614525139665,
+                            "uniqueID": 1748898269398,
+                            "ioValues": [
+                                {
+                                    "name": "H",
+                                    "ioValue": 1
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "H/-2"
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "W/2",
+                            "x": 0.46230158730158727,
+                            "y": 0.6815642458100559,
+                            "uniqueID": 1748898275785,
+                            "ioValues": [
+                                {
+                                    "name": "W",
+                                    "ioValue": 1
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "W/2"
+                        }
+                    ],
+                    "allConnectors": [
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1748898207518,
+                            "ap2ID": 1748898224227
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1748898224227,
+                            "ap2ID": 1748898234383
+                        }
+                    ],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
                 }
             ],
             "allConnectors": [
