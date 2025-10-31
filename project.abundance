@@ -2307,8 +2307,8 @@
         {
           "atomType": "Molecule",
           "name": "Legs",
-          "x": 0.43187830687830686,
-          "y": 0.8463687150837989,
+          "x": 0.4173280423280424,
+          "y": 0.7743732590529249,
           "uniqueID": 1748898200792,
           "ioValues": [],
           "topLevel": false,
@@ -4107,6 +4107,25 @@
           "uniqueID": "451cd3be-1319-4f0b-970a-fe5656b47da3",
           "ioValues": [],
           "selectedColorIndex": 20
+        },
+        {
+          "atomType": "Rectangle",
+          "name": "Rectangle",
+          "x": 0.5813492063492063,
+          "y": 0.883008356545961,
+          "uniqueID": "2d557fa1-2926-4d5b-90f6-2480901d4a4b",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 203.2,
+              "currentEquation": "8*25.4"
+            },
+            {
+              "name": "y length",
+              "ioValue": 304.79999999999995,
+              "currentEquation": "12*25.4"
+            }
+          ]
         }
       ],
       "allConnectors": [
