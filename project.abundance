@@ -583,13 +583,34 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.30092592592592593,
-              "y": 0.611731843575419,
+              "x": 0.30952380952380953,
+              "y": 0.6072423398328691,
               "uniqueID": 1748898224227,
               "ioValues": [
                 {
                   "name": "height",
-                  "ioValue": -65
+                  "ioValue": -63.5,
+                  "currentEquation": "-2.5*25.4"
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.7228835978835979,
+              "y": 0.67966573816156,
+              "uniqueID": "id-355",
+              "ioValues": [
+                {
+                  "name": "xDist",
+                  "ioValue": -50
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
                 }
               ]
             },
@@ -931,27 +952,6 @@
               },
               "unitsKey": "Unitless",
               "fileTypeVersion": 1
-            },
-            {
-              "atomType": "Move",
-              "x": 0.7228835978835979,
-              "y": 0.67966573816156,
-              "uniqueID": "id-355",
-              "ioValues": [
-                {
-                  "name": "xDist",
-                  "ioValue": -50,
-                  "currentEquation": "-50"
-                },
-                {
-                  "name": "yDist",
-                  "ioValue": 0
-                },
-                {
-                  "name": "zDist",
-                  "ioValue": 0
-                }
-              ]
             }
           ],
           "allConnectors": [
@@ -966,14 +966,14 @@
               "ap2ID": 1748899072852
             },
             {
-              "ap2Name": "geometry",
-              "ap1ID": 1748899072852,
-              "ap2ID": "id-355"
-            },
-            {
               "ap2Name": "number or geometry",
               "ap1ID": "id-355",
               "ap2ID": 1748898200425
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": 1748899072852,
+              "ap2ID": "id-355"
             }
           ],
           "fileTypeVersion": 1
