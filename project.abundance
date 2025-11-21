@@ -162,7 +162,7 @@
           "x": 0.4715608465608465,
           "y": 0.13370473537604458,
           "uniqueID": "451cd3be-1319-4f0b-970a-fe5656b47da3",
-          "selectedColorIndex": 20
+          "selectedColor": "Black"
         },
         {
           "atomType": "Move",
@@ -301,7 +301,7 @@
               "x": 0.9166666666666667,
               "y": 0.49860724233983283,
               "uniqueID": 1743279285293,
-              "selectedColorIndex": 19
+              "selectedColor": "Grey"
             },
             {
               "atomType": "Rectangle",
@@ -1052,7 +1052,7 @@
               "x": 0.7294973544973544,
               "y": 0.7186629526462396,
               "uniqueID": "f9fb1279-47e0-4606-bb9b-58c1f5fb950e",
-              "selectedColorIndex": 23
+              "selectedColor": "Keep Out"
             },
             {
               "atomType": "GitHubMolecule",
@@ -2008,7 +2008,7 @@
                   "x": 0.5191798941798942,
                   "y": 0.7988826815642459,
                   "uniqueID": 1748896879028,
-                  "selectedColorIndex": 22
+                  "selectedColor": "Glass"
                 },
                 {
                   "atomType": "Assembly",
@@ -2354,6 +2354,44 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.31600324939073926,
+      "y": 0.7576601671309192,
+      "uniqueID": "id-715",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.4581640942323314,
+      "y": 0.7325905292479109,
+      "uniqueID": "id-718",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Color",
+      "x": 0.6133225020308692,
+      "y": 0.8217270194986073,
+      "uniqueID": "id-722",
+      "selectedColor": "Keep Out"
+    },
+    {
+      "atomType": "Color",
+      "x": 0.5775792038992689,
+      "y": 0.6239554317548747,
+      "uniqueID": "id-725",
+      "selectedColor": "Glass"
     }
   ],
   "allConnectors": [
@@ -2361,6 +2399,21 @@
       "ap2Name": "number or geometry",
       "ap1ID": 1748895810865,
       "ap2ID": 1748895809906
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-715",
+      "ap2ID": "id-718"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-718",
+      "ap2ID": "id-722"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-718",
+      "ap2ID": "id-725"
     }
   ],
   "unitsKey": "MM",
