@@ -20,8 +20,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 100,
-          "currentEquation": "100"
+          "ioValue": 100
         }
       ]
     },
@@ -33,8 +32,7 @@
       "ioValues": [
         {
           "name": "height",
-          "ioValue": 100,
-          "currentEquation": "100"
+          "ioValue": 100
         }
       ]
     },
@@ -51,6 +49,42 @@
       "y": 0.6239554317548747,
       "uniqueID": "id-725",
       "selectedColor": "Glass"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.4933862433862434,
+      "y": 0.8217270194986073,
+      "uniqueID": "id-1094",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 300
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.8267195767195767,
+      "y": 0.7019498607242339,
+      "uniqueID": "id-1100",
+      "ioValues": [
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
+        }
+      ]
     },
     {
       "atomType": "Molecule",
@@ -2394,44 +2428,6 @@
         }
       ],
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Move",
-      "x": 0.4933862433862434,
-      "y": 0.8217270194986073,
-      "uniqueID": "id-1094",
-      "ioValues": [
-        {
-          "name": "xDist",
-          "ioValue": 300,
-          "currentEquation": "300"
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0,
-          "currentEquation": "0"
-        },
-        {
-          "name": "zDist",
-          "ioValue": 0
-        }
-      ]
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.8267195767195767,
-      "y": 0.7019498607242339,
-      "uniqueID": "id-1100",
-      "ioValues": [
-        {
-          "name": "Shape 2",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 3",
-          "ioValue": null
-        }
-      ]
     }
   ],
   "allConnectors": [
@@ -2456,6 +2452,11 @@
       "ap2ID": "id-1100"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1094",
+      "ap2ID": "id-722"
+    },
+    {
       "ap2Name": "number or geometry",
       "ap1ID": 1748895810865,
       "ap2ID": 1748895809906
@@ -2464,11 +2465,6 @@
       "ap2Name": "Shape 2",
       "ap1ID": 1748895810865,
       "ap2ID": "id-1100"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-1094",
-      "ap2ID": "id-722"
     }
   ],
   "unitsKey": "MM",
