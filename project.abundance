@@ -355,8 +355,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.8214285714285714,
-              "y": 0.2256267409470752,
+              "x": 0.5945767195767195,
+              "y": 0.22841225626740946,
               "uniqueID": 1743279258731,
               "ioValues": [
                 {
@@ -390,8 +390,8 @@
             },
             {
               "atomType": "Rectangle",
-              "x": 0.6765873015873016,
-              "y": 0.6852367688022285,
+              "x": 0.4021164021164021,
+              "y": 0.7381615598885795,
               "uniqueID": 1743279703700,
               "ioValues": [
                 {
@@ -406,8 +406,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.759920634920635,
-              "y": 0.5459610027855153,
+              "x": 0.46097883597883593,
+              "y": 0.5348189415041783,
               "uniqueID": 1743279712997,
               "ioValues": [
                 {
@@ -426,9 +426,27 @@
             },
             {
               "atomType": "Difference",
-              "x": 0.6818783068783069,
-              "y": 0.25069637883008355,
+              "x": 0.48214285714285715,
+              "y": 0.27019498607242337,
               "uniqueID": 1743279731933
+            },
+            {
+              "atomType": "Code",
+              "x": 0.6917989417989417,
+              "y": 0.818941504178273,
+              "uniqueID": "id-1478",
+              "ioValues": [
+                {
+                  "name": "radius",
+                  "ioValue": 5
+                },
+                {
+                  "name": "height",
+                  "ioValue": 10
+                }
+              ],
+              "codeVersion": 1,
+              "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"radius\", type: \"number\", defaultValue: 5 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 }\n];\n\nlet importedShape = library[shape];\nlet newPlane = replicad.makePlane()\nlet circDraw = replicad.drawCircle(radius)\nlet sketchCir = circDraw.sketchOnPlane(newPlane)\nlet cyl = sketchCir.extrude(height)\nlet cylObj = {\n  geometry: [cyl],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\n\nlet assembly = await Assembly([importedShape, cylObj]);\nreturn assembly;\n"
             }
           ],
           "allConnectors": [
@@ -466,6 +484,11 @@
               "ap2Name": "geometry",
               "ap1ID": 1743279258731,
               "ap2ID": 1743279285293
+            },
+            {
+              "ap2Name": "shape",
+              "ap1ID": 1743279258731,
+              "ap2ID": "id-1478"
             },
             {
               "ap2Name": "number or geometry",
